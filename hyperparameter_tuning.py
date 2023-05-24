@@ -17,11 +17,11 @@ def vectorize_sequences(sequences):
 
 def main():
     # Read data
-    data = pd.read_csv('/Users/andrejhric_1/git_projects/DataScience/Data_Science_Module_Project_predictor_of_cellular_compartment/predictor/cleaned_data.csv')
+    data = pd.read_csv('/Users/andrejhric_1/git_projects/DS_CW/DS/cleaned_data.csv')
 
     # Get sequences (features) and labels
     X = data['Sequence'].values
-    y = data['Subcellular_location'].values
+    y = data['Subcellular location [CC]'].values
 
     # Vectorize sequences
     X = vectorize_sequences(X)
